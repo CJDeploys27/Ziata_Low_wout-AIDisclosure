@@ -12,7 +12,12 @@ const App: React.FC = () => {
             id: 'welcome-1',
             sender: 'bot',
             text: "Welcome! I'm Ziata, your Lifestyle and Wellness Assistant. My goal is to help you improve your life with tiny, sustainable changes.",
+        },
+        {
+            id: 'welcome-2',
+            text: 'Are you ready to speak with Ziata?',
             options: [{ text: 'Begin', value: 'begin', needScore: 0, subtype: 'COGNITIVE' }],
+            sender: 'bot'
         },
     ];
 
@@ -100,7 +105,6 @@ const App: React.FC = () => {
                             text: "Thank you for chatting with Ziata. Remember, small changes lead to remarkable results. Have a great day!",
                             options: [
                                 { text: 'End Session', value: 'end_session', needScore: 0, subtype: 'COGNITIVE' },
-                                { text: 'Return to Survey', value: 'end_session', needScore: 0, subtype: 'COGNITIVE' }
                             ]
                         });
                         setOptionsDisabled(false);
